@@ -22,8 +22,8 @@ Haiku.prototype.checkVowels = function(str1) {
     let words = str1.split(" ");
     let count = 0;
     for(i = 0; i < words.length; i++){
-      if(words[i].includes("ou") || words[i].includes("ie") || words[i].includes("oi") || words[i].includes("oo") || words[i].includes("ea") || words[i].includes("ee") || words[i].includes("ai")){
-        words[i].replace("o");
+      // if(words[i].includes("ou") || words[i].includes("ie") || words[i].includes("oi") || words[i].includes("oo") || words[i].includes("ea") || words[i].includes("ee") || words[i].includes("ai")){
+        words[i].replace("ou","o") && words[i];
       }
       let letters = words[i].split("");
       for(j = 0; j < letters.length; j++){
